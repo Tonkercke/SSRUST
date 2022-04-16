@@ -18,14 +18,13 @@ cat << EOF > /usr/local/etc/xray/config.json
   },
   "inbounds": [
     {
-      "listen": "127.0.0.1",
+      "address": "127.0.0.1",
       "port": 443,
       "protocol": "Shadowsocks",
       "settings": {
-        "method": "AES-128-GCM",
+        "method": "chacha20-ietf-poly1305",
                 "password":"$PW",
-                "network": "tcp,udp",
-                "ivCheck": true
+                "level": 0
                 }
   ],
   "outbounds": [
