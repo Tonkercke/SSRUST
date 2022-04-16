@@ -18,12 +18,13 @@ cat << EOF > /usr/local/etc/xray/config.json
   },
   "inbounds": [
     {
-      "address": "0.0.0.0",
+      "address": "127.0.0.1",
       "port": 443,
       "protocol": "Shadowsocks",
       "settings": {
+        "email": "love@v2fly.org",
         "method": "chacha20-ietf-poly1305",
-                "password": "$PW",
+                "password":"$PW",
                 "level": 0
                 }
   ],
