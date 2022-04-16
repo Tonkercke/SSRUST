@@ -1,15 +1,21 @@
 {
-  "name": "XSS",
-  "description": "XSS",
-  "keywords": [
-    "ss"
-  ],
+  "name": "SSRUST",
+  "description": "SSRUST",
+  "keywords": ["SSRUST"],
   "env": {
-    "PW":{
-      "description": "password",
-      "value": "xxxxxxxx"
-      }
+    "SSVER": {
+       "description": "shadowsocks-rust version",
+       "value": "1.14.3"
+     }, 
+    "method": {
+       "description": "encryption method",
+       "value": "chacha20-ietf-poly1305"
+     },
+    "password": {
+       "description": "your pawssword",
+       "value": "123-456"
+     }
   },
   "repository": "",
   "stack": "container"
-}
+ }

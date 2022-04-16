@@ -1,7 +1,8 @@
-FROM alpine:latest
+#FROM alpine:latest
+FROM heroku/heroku:18
+RUN mkdir -m 777 /ss
+ 
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh 
 
-RUN apk add --no-cache --virtual .build-deps ca-certificates curl unzip
-
-ADD configure.sh /configure.sh
-RUN chmod +x /configure.sh
-CMD /configure.sh
+CMD /entrypoint.sh
