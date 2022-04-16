@@ -24,9 +24,10 @@ cat << EOF > /usr/local/etc/xray/config.json
       "settings": {
         "email": "love@v2fly.org",
         "method": "chacha20-ietf-poly1305",
-                "password":"$PW",
-                "level": 0
-                }
+        "password":"$PW",
+        "level": 0
+        }
+      }
   ],
   "outbounds": [
     {
