@@ -1,0 +1,15 @@
+{
+  "name": "XSS",
+  "description": "XSS",
+  "keywords": [
+    "ss"
+  ],
+  "env": {
+    "PW":{
+      "description": "password",
+      "value": "xxxxxxxx"
+      }
+  },
+  "repository": "",
+  "stack": "container"
+}
