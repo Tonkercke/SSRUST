@@ -1,4 +1,4 @@
-# Xray Shadowsocks
+# Shadowsocks-Rust
 
 ## 概述
 
